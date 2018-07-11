@@ -1,6 +1,0 @@
-<import src="item$97181ebc" />
-<template name="list$830d2ea6">
-  <view class="_div data-v-eed93500 search">
-    <template data="{{...$root[$kk+'0'], $root}}" is="item$97181ebc"></template>
-  </view>
-</template>

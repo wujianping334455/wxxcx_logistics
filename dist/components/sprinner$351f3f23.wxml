@@ -1,9 +1,0 @@
-<template name="sprinner$351f3f23">
-  <view class="_div data-v-5aed1d82 sprinner">
-    <view class="_div data-v-5aed1d82 spinner">
-      <view class="_div data-v-5aed1d82 bounce1"></view>
-      <view class="_div data-v-5aed1d82 bounce2"></view>
-      <view class="_div data-v-5aed1d82 bounce3"></view>
-    </view>
-  </view>
-</template>

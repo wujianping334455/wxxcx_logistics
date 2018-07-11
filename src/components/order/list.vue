@@ -1,5 +1,6 @@
 <template>
-    <div class='search'>
+    <div class='list'>
+        <o-item></o-item>
         <o-item></o-item>
     </div>
 </template>
@@ -26,4 +27,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.list{
+    background-color: #F7F7F7;
+}
 </style>

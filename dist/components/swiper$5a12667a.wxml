@@ -1,7 +1,0 @@
-<template name="swiper$5a12667a">
-  <swiper class="_swiper data-v-8c0e9abc swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}">
-    <swiper-item wx:key="i" key="{{i}}" wx:for="{{imgUrls}}" wx:for-index="i" wx:for-item="item" class="_swiper-item data-v-8c0e9abc">
-      <image src="{{item}}" class="_image data-v-8c0e9abc image"></image>
-    </swiper-item>
-  </swiper>
-</template>

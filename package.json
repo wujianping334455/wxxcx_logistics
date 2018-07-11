@@ -1,8 +1,8 @@
 {
-  "name": "mpver-demo",
+  "name": "candybot_wx",
   "version": "0.1.0",
   "description": "A Mpvue project",
-  "author": "WsmDyj <972774037@qq.com>",
+  "author": "wujianping <56299310@qq.com>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",

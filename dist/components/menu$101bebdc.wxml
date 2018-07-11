@@ -1,6 +1,0 @@
-<template name="menu$101bebdc">
-  <view class="_div data-v-73282b46 menu-btn">
-    <button class="_button data-v-73282b46 view">查看物流</button>
-    <button class="_button data-v-73282b46 grace">取消订单</button>
-  </view>
-</template>

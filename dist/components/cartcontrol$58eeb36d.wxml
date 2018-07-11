@@ -1,7 +1,0 @@
-<template name="cartcontrol$58eeb36d">
-  <view class="_div data-v-0889350c cartcontrol">
-    <view class="_div data-v-0889350c cart-decrease iconfont  icon-jianhao" wx:if="{{food.count>0}}" catchtap="handleProxy" transition="move" data-eventid="{{'0'}}" data-comkey="{{$k}}"></view>
-    <view class="_div data-v-0889350c cart-count" wx:if="{{food.count>0}}">{{food.count}}</view>
-    <view class="_div data-v-0889350c cart-add iconfont icon-jiahao-copy" catchtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"></view>
-  </view>
-</template>

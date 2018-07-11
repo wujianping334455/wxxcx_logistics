@@ -1,4 +1,4 @@
-# mpver-demo
+# candybot_wx
 
 > A Mpvue project
 
