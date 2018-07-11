@@ -1,0 +1,16 @@
+<import src="swiper$5a12667a" />
+<import src="search$69f29aa0" />
+<import src="status$3fd840a2" />
+<import src="company$3bd98710" />
+<import src="menu$101bebdc" />
+<template name="home$06c70b4c">
+  <view class="_div data-v-8314a18e home">
+    <template data="{{...$root[$kk+'0'], $root}}" is="swiper$5a12667a"></template>
+    <template data="{{...$root[$kk+'1'], $root}}" is="search$69f29aa0"></template>
+    <scroll-view class="_scroll-view data-v-8314a18e">
+      <template data="{{...$root[$kk+'2'], $root}}" is="status$3fd840a2"></template>
+      <template data="{{...$root[$kk+'3'], $root}}" is="company$3bd98710"></template>
+      <template data="{{...$root[$kk+'4'], $root}}" is="menu$101bebdc"></template>
+    </scroll-view>
+  </view>
+</template>

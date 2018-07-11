@@ -1,0 +1,53 @@
+
+.my.data-v-cc7140f4 {
+  font-size: 30rpx;
+  background: #ececec;
+  height: 100vh;
+}
+.my .header.data-v-cc7140f4 {
+  height: 300rpx;
+  background: #ffd161;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my .header .userImg.data-v-cc7140f4 {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-bottom: 30rpx;
+}
+.my .header .userImg .thumb.data-v-cc7140f4 {
+  border-radius: 50%;
+}
+.my .content.data-v-cc7140f4 {
+  background: #ececec;
+}
+.my .coupon.data-v-cc7140f4,
+.my .signOut.data-v-cc7140f4,
+.my .address.data-v-cc7140f4,
+.my .tel.data-v-cc7140f4 {
+  background: #fff;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding-left: 15rpx;
+  margin-top: 20rpx;
+}
+.my .coupon .icon.data-v-cc7140f4,
+.my .signOut .icon.data-v-cc7140f4,
+.my .address .icon.data-v-cc7140f4,
+.my .tel .icon.data-v-cc7140f4 {
+  float: right;
+  color: #b4b4b4;
+}
+.my .coupon .text.data-v-cc7140f4,
+.my .signOut .text.data-v-cc7140f4,
+.my .address .text.data-v-cc7140f4,
+.my .tel .text.data-v-cc7140f4 {
+  padding-left: 30rpx;
+}
+.my .signOut.data-v-cc7140f4 {
+  text-align: center;
+  font-size: 35rpx;
+}

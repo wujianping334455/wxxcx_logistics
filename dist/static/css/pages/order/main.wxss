@@ -1,0 +1,108 @@
+
+.empty.data-v-3f8ac6ca {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25%;
+}
+.empty .order.data-v-3f8ac6ca {
+  height: 68rpx;
+  width: 240rpx;
+  background-color: #ffd300;
+  text-align: center;
+  margin-top: 40rpx;
+  line-height: 68rpx;
+  border-radius: 5rpx;
+}
+.container.data-v-3f8ac6ca {
+  height: 100%;
+}
+.container .orderList.data-v-3f8ac6ca {
+  width: 100%;
+  padding: 15rpx;
+  border: 100rpx 0;
+  border-style: solid;
+  border-color: #ececec;
+}
+.container .orderList .order-title.data-v-3f8ac6ca {
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-bottom: 1rpx solid #ececec;
+}
+.container .orderList .order-title .order-title-restaurantName.data-v-3f8ac6ca {
+  width: 200rpx;
+  float: left;
+  height: 100%;
+  font-size: 30rpx;
+}
+.container .orderList .order-title .order-title-restaurantName .name.data-v-3f8ac6ca {
+  padding-right: 10rpx;
+}
+.container .orderList .order-title .order-title-restaurantName .icon.data-v-3f8ac6ca {
+  color: #b4b4b4;
+}
+.container .orderList .order-title .order-title-state.data-v-3f8ac6ca {
+  width: 200rpx;
+  float: right;
+  color: #ffc648;
+  margin-right: -15rpx;
+  font-size: 28rpx;
+}
+.container .orderList .order-content.data-v-3f8ac6ca {
+  height: 250rpx;
+  display: flex;
+  align-items: center;
+}
+.container .orderList .order-content .order-content-restaurantImg.data-v-3f8ac6ca {
+  width: 125rpx;
+  height: 125rpx;
+}
+.container .orderList .order-content .order-content-info.data-v-3f8ac6ca {
+  font-size: 25rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.container .orderList .order-content .order-content-info .order-content-info-price.data-v-3f8ac6ca,
+.container .orderList .order-content .order-content-info .order-content-info-howToDistribute.data-v-3f8ac6ca {
+  height: 42rpx;
+  line-height: 42rpx;
+  margin-left: 30rpx;
+}
+.container .orderList .order-content .order-content-info .order-content-info-price.data-v-3f8ac6ca {
+  color: #f00;
+  font-size: 30rpx;
+}
+.container .orderList .order-desc.data-v-3f8ac6ca {
+  float: right;
+  font-size: 30rpx;
+  width: 335rpx;
+  margin-bottom: 40rpx;
+  line-height: 30rpx;
+  margin-right: 10rpx;
+}
+.container .orderList .order-footer.data-v-3f8ac6ca {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 28rpx;
+}
+.container .orderList .order-footer .order-footer-goToComment.data-v-3f8ac6ca,
+.container .orderList .order-footer .order-footer-orderAgain.data-v-3f8ac6ca {
+  margin-top: 15rpx;
+  margin-right: 40rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  width: 200rpx;
+  text-align: center;
+  border: 1rpx solid #ececec;
+}
+.container .orderList .order-footer .order-footer-orderAgain.data-v-3f8ac6ca {
+  margin-right: 20rpx;
+}
+.container .orderList .order-footer .order-footer-goToComment.data-v-3f8ac6ca {
+  background: #ffd161;
+}
