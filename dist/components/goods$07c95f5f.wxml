@@ -1,0 +1,70 @@
+<import src="cartcontrol$58eeb36d" />
+<import src="shopcart$7bc0e51e" />
+<template name="goods$07c95f5f">
+  <view class="_div data-v-fe220628">
+    <view class="_div data-v-fe220628 goods">
+      <scroll-view scroll-y="{{true}}" class="_scroll-view data-v-fe220628 menu-wrapp">
+        <view class="_ul data-v-fe220628">
+          <view class="_li data-v-fe220628 menu-item {{[changeGoods === item.id ? 'active' : '']}}" wx:key="index" key="{{index}}" data-id="{{item.id}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{goods}}" wx:for-index="index"
+            wx:for-item="item">
+            <label class="_span data-v-fe220628 text border-1px"> {{item.name}} </label>
+          </view>
+        </view>
+      </scroll-view>
+      <scroll-view scroll-y="{{true}}" class="_scroll-view data-v-fe220628 foods-wrapper" bindscroll="handleProxy" scroll-into-view="{{whereFood}}" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        <view class="_ul data-v-fe220628">
+          <view wx:key="id" key="{{id}}" data-id="{{id}}" id="{{item.id}}" class="_li data-v-fe220628 food-list " wx:for="{{goods}}" wx:for-index="id" wx:for-item="item">
+            <view class="_h1 data-v-fe220628 title">{{item.name}}</view>
+            <view class="_ul data-v-fe220628">
+              <view wx:key="index" key="{{index}}" data-id="{{index}}" bindtap="handleProxy" class="_li data-v-fe220628 food-item  border-1px" data-eventid="{{'1-'+id+'-'+index}}" data-comkey="{{$k}}" wx:for="{{item.foods}}" wx:for-index="index" wx:for-item="food">
+                <view class="_div data-v-fe220628 icon">
+                  <image src="{{food.icon}}" style="width:114rpx;height:114rpx" class="_image data-v-fe220628"></image>
+                </view>
+                <view class="_div data-v-fe220628 content">
+                  <view class="_h2 data-v-fe220628 name">{{food.name}}</view>
+                  <view class="_p data-v-fe220628 desc">{{food.description}}</view>
+                  <view class="_div data-v-fe220628 extra">
+                    <label class="_span data-v-fe220628 count">月售{{food.sellCount}}</label>
+                    <label class="_span data-v-fe220628 rating">好评率{{food.rating}}%</label>
+                  </view>
+                  <view class="_div data-v-fe220628 price">
+                    <label class="_span data-v-fe220628 now">￥{{food.price}}</label>
+                    <label hidden="{{!(food.oldPrice)}}" class="_span data-v-fe220628 old">￥{{food.oldPrice}}</label>
+                  </view>
+                  <view class="_div data-v-fe220628 cartcontrol-wrapper">
+                    <template data="{{...$root[$kk+'0-'+id+'-'+index], $root}}" is="cartcontrol$58eeb36d"></template>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+      <template data="{{...$root[$kk+'1'], $root}}" is="shopcart$7bc0e51e"></template>
+    </view>
+    <view class="_div data-v-fe220628 food border-1px" hidden="{{!(foodFlg)}}">
+      <view class="_div data-v-fe220628 icon">
+        <image src="{{selectedFood.image}}" style="width:670rpx;height:500rpx" class="_image data-v-fe220628"></image>
+      </view>
+      <view class="_div data-v-fe220628 content">
+        <view class="_div data-v-fe220628 extra">
+          <view class="_h2 data-v-fe220628 name">{{selectedFood.name}}</view>
+          <view class="_div data-v-fe220628 desc">
+            <label class="_span data-v-fe220628 count">月售{{selectedFood.sellCount}}</label>
+            <label class="_span data-v-fe220628 rating">好评率{{selectedFood.rating}}%</label>
+          </view>
+        </view>
+        <view class="_div data-v-fe220628 price">
+          <label class="_span data-v-fe220628 now">￥{{selectedFood.price}}</label>
+          <view class="_div data-v-fe220628 cartcontrol-wrapper">
+            <template data="{{...$root[$kk+'2'], $root}}" is="cartcontrol$58eeb36d"></template>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-fe220628 close" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+        <label class="_span data-v-fe220628 text">x</label>
+      </view>
+    </view>
+    <view class="_div data-v-fe220628 list-mask" hidden="{{!(foodFlg)}}" bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}"></view>
+  </view>
+</template>

@@ -1,0 +1,16 @@
+<import src="header$6833fe5e" />
+<import src="goods$07c95f5f" />
+<import src="ratings$43122a42" />
+<import src="seller$68d5e6de" />
+<template name="index$72f4de5f">
+  <view id="app" class="_div data-v-d147869c">
+    <template data="{{...$root[$kk+'0'], $root}}" is="header$6833fe5e"></template>
+    <view class="_div data-v-d147869c tab">
+      <view class="_div data-v-d147869c tab-item {{[changeNav == index ? 'active' : '']}}" wx:key="index" key="{{index}}" data-current="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{navList}}" wx:for-index="index"
+        wx:for-item="item"> {{item.name}} </view>
+    </view>
+    <template wx:if="{{changeNav==0}}" data="{{...$root[$kk+'1'], $root}}" is="goods$07c95f5f"></template>
+    <template wx:if="{{current==1}}" data="{{...$root[$kk+'2'], $root}}" is="ratings$43122a42"></template>
+    <template wx:if="{{current==2}}" data="{{...$root[$kk+'3'], $root}}" is="seller$68d5e6de"></template>
+  </view>
+</template>

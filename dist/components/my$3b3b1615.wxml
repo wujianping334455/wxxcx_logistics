@@ -1,0 +1,37 @@
+<template name="my$3b3b1615">
+  <view class="_div data-v-486cdebc my">
+    <view class="_div data-v-486cdebc container">
+      <view class="_div data-v-486cdebc header">
+        <view class="_div data-v-486cdebc userImg">
+          <open-data class="_open-data data-v-486cdebc thumb" type="userAvatarUrl"></open-data>
+        </view>
+        <view class="_div data-v-486cdebc userName">
+          <open-data class="_open-data data-v-486cdebc nackname" lang="zh_CN" type="userNickName"></open-data>
+        </view>
+      </view>
+      <view class="_div data-v-486cdebc content">
+        <view class="_div data-v-486cdebc coupon">
+          <image style="width:30rpx;height:30rpx;" src="/static/images/hongbao.png" class="_image data-v-486cdebc"></image>
+          <label class="_span data-v-486cdebc text">美团红包</label>
+          <view class="_i data-v-486cdebc iconfont icon-icon icon"></view>
+        </view>
+      </view>
+      <view class="_div data-v-486cdebc address">
+        <image style="width:30rpx;height:30rpx;" src="/static/images/address.png" class="_image data-v-486cdebc"></image>
+        <label class="_span data-v-486cdebc text"> 我的收货地址</label>
+        <view class="_i data-v-486cdebc iconfont icon-icon icon"></view>
+      </view>
+      <view class="_div data-v-486cdebc tel">
+        <image style="width:30rpx;height:30rpx;" src="/static/images/liping.png" class="_image data-v-486cdebc"></image>
+        <label class="_span data-v-486cdebc text">邀请有礼</label>
+        <view class="_i data-v-486cdebc iconfont icon-icon icon"></view>
+      </view>
+      <view class="_div data-v-486cdebc tel">
+        <image style="width:30rpx;height:30rpx;" src="/static/images/tel.png" class="_image data-v-486cdebc"></image>
+        <label class="_span data-v-486cdebc text">客服电话 101-097-77</label>
+        <view class="_i data-v-486cdebc iconfont icon-icon icon"></view>
+      </view>
+      <view class="_div data-v-486cdebc signOut">退出账号</view>
+    </view>
+  </view>
+</template>

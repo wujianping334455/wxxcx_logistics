@@ -1,0 +1,37 @@
+<template name="order$cf975c4a">
+  <view class="_div data-v-86c89fa4 order">
+    <view class="_div data-v-86c89fa4 empty" wx:if="{{isShow}}">
+      <view class="_div data-v-86c89fa4 image">
+        <image src="/static/images/orderImg.png" class="_image data-v-86c89fa4"></image>
+      </view>
+      <view class="_div data-v-86c89fa4 order" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <label class="_span data-v-86c89fa4 text">立即下单</label>
+      </view>
+    </view>
+    <scroll-view class="_scroll-view data-v-86c89fa4 container" scroll-y="{{true}}">
+      <view class="_div data-v-86c89fa4 orderList" wx:key="index" key="{{index}}" wx:for="{{orderList}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-86c89fa4 order-title">
+          <view class="_div data-v-86c89fa4 order-title-restaurantName">
+            <label class="_span data-v-86c89fa4 name">{{item.name}}</label>
+            <label class="_span data-v-86c89fa4 iconfont icon-icon icon"></label>
+          </view>
+          <view class="_div data-v-86c89fa4 order-title-state">商家已接单</view>
+        </view>
+        <view class="_div data-v-86c89fa4 order-content">
+          <image class="_image data-v-86c89fa4 order-content-restaurantImg" src="{{item.icon}}"></image>
+          <view class="_div data-v-86c89fa4 order-content-info">
+            <view class="_div data-v-86c89fa4 order-content-info-price">￥ {{item.price}}</view>
+            <view class="_div data-v-86c89fa4 order-content-info-howToDistribute">美团小助手提供服务</view>
+          </view>
+        </view>
+        <view class="_div data-v-86c89fa4 order-desc">共{{item.count}}件商品，实付
+          <label style="font-weight:700;" class="_span data-v-86c89fa4">￥ {{item.count*item.price}}</label>
+        </view>
+        <view class="_div data-v-86c89fa4 order-footer">
+          <view class="_div data-v-86c89fa4 order-footer-orderAgain">再来一单</view>
+          <view class="_div data-v-86c89fa4 order-footer-goToComment">去评论</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</template>

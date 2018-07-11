@@ -1,0 +1,66 @@
+<import src="star$cc54dd1e" />
+<import src="split$56840032" />
+<template name="seller$68d5e6de">
+  <view class="_div data-v-dc6d0a44 seller">
+    <view class="_div data-v-dc6d0a44 seller-content">
+      <view class="_div data-v-dc6d0a44 overview">
+        <view class="_h1 data-v-dc6d0a44 title">{{seller.name}}</view>
+        <view class="_div data-v-dc6d0a44 desc bordex-1px">
+          <view class="_div data-v-dc6d0a44 star">
+            <template data="{{...$root[$kk+'0'], $root}}" is="star$cc54dd1e"></template>
+          </view>
+          <label class="_span data-v-dc6d0a44 text">({{seller.ratingCount}})</label>
+          <label class="_span data-v-dc6d0a44 text">月销{{seller.sellCount}}单</label>
+        </view>
+        <view class="_ul data-v-dc6d0a44 remaek">
+          <view class="_li data-v-dc6d0a44 block">
+            <view class="_h2 data-v-dc6d0a44">起送价</view>
+            <view class="_div data-v-dc6d0a44 content">
+              <label class="_span data-v-dc6d0a44 stress">{{seller.minPrice}}</label>元 </view>
+          </view>
+          <view class="_li data-v-dc6d0a44 block">
+            <view class="_h2 data-v-dc6d0a44">商家配送</view>
+            <view class="_div data-v-dc6d0a44 content">
+              <label class="_span data-v-dc6d0a44 stress">{{seller.deliveryPrice}}</label>元 </view>
+          </view>
+          <view class="_li data-v-dc6d0a44 block">
+            <view class="_h2 data-v-dc6d0a44">评价配送时间</view>
+            <view class="_div data-v-dc6d0a44 content">
+              <label class="_span data-v-dc6d0a44 stress">{{seller.deliveryTime}}</label>分钟 </view>
+          </view>
+        </view>
+      </view>
+      <template data="{{...$root[$kk+'1'], $root}}" is="split$56840032"></template>
+      <view class="_div data-v-dc6d0a44 bulletin ">
+        <view class="_h1 data-v-dc6d0a44 title">公告与活动</view>
+        <view class="_div data-v-dc6d0a44 content-wrapper border-1px">
+          <view class="_p data-v-dc6d0a44 contern">{{seller.bulletin}}</view>
+        </view>
+        <view wx:if="{{seller.supports}}" class="_ul data-v-dc6d0a44 supports">
+          <view class="_li data-v-dc6d0a44 support-item border-1px" wx:key="index" key="{{index}}" wx:for="{{seller.supports}}" wx:for-index="index" wx:for-item="item">
+            <label class="_span data-v-dc6d0a44 icon {{classMap[seller.supports[index].type]}}"></label>
+            <label class="_span data-v-dc6d0a44 text">{{seller.supports[index].description}}</label>
+          </view>
+        </view>
+      </view>
+      <template data="{{...$root[$kk+'2'], $root}}" is="split$56840032"></template>
+      <view class="_div data-v-dc6d0a44 pics">
+        <view class="_h1 data-v-dc6d0a44 title">商家实景</view>
+        <scroll-view scroll-x="true" style="height: 180rpx;" class="_scroll-view data-v-dc6d0a44">
+          <view class="_div data-v-dc6d0a44 item" wx:key="index" key="{{index}}" wx:for="{{seller.pics}}" wx:for-index="index" wx:for-item="item">
+            <image src="{{item}}" style="width:240rpx;height:180rpx;display:inline-block" class="_image data-v-dc6d0a44"></image>
+          </view>
+        </scroll-view>
+      </view>
+      <template data="{{...$root[$kk+'3'], $root}}" is="split$56840032"></template>
+      <view class="_div data-v-dc6d0a44 info">
+        <view class="_h1 data-v-dc6d0a44 title  border-1px">商家信息</view>
+        <view class="_ul data-v-dc6d0a44">
+          <view class="_li data-v-dc6d0a44 info-item" wx:key="index" key="{{index}}" wx:for="{{seller.infos}}" wx:for-index="index" wx:for-item="info">
+            <label class="_span data-v-dc6d0a44 text">{{info}}</label>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

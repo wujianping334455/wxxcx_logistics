@@ -1,0 +1,9 @@
+<template name="company$d9390684">
+  <view class="_div data-v-5997eb0b company-box">
+    <image src alt="快递公司" class="_img data-v-5997eb0b"></image>
+    <view class="_div data-v-5997eb0b point">
+      <view class="_div data-v-5997eb0b time">深圳大学----->红榴斋（李新奇)</view>
+      <view class="_div data-v-5997eb0b address">订单号：870 966 231 222</view>
+    </view>
+  </view>
+</template>

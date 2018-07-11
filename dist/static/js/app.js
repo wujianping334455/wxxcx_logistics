@@ -108,9 +108,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5700c745", Component.options)
+    hotAPI.createRecord("data-v-50f22fa9", Component.options)
   } else {
-    hotAPI.reload("data-v-5700c745", Component.options)
+    hotAPI.reload("data-v-50f22fa9", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true

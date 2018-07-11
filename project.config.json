@@ -10,7 +10,7 @@
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
 	"appid": "wx06760ac9541e605a",
-	"projectname": "CANDYBOT_WEIXIN",
+	"projectname": "mpver-demo",
 	"condition": {
 		"search": {
 			"current": -1,

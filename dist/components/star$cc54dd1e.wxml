@@ -1,0 +1,5 @@
+<template name="star$cc54dd1e">
+  <view class="_div data-v-1a21a384 star {{starType}}">
+    <label class="_span data-v-1a21a384 star-item {{itemClass}}" wx:key="index" key="{{index}}" wx:for="{{itemClasses}}" wx:for-index="index" wx:for-item="itemClass"></label>
+  </view>
+</template>

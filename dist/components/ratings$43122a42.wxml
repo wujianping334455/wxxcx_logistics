@@ -1,0 +1,58 @@
+<import src="star$cc54dd1e" />
+<import src="split$56840032" />
+<import src="ratingselect$8845185e" />
+<template name="ratings$43122a42">
+  <view class="_div data-v-2d6e0c28 ratings">
+    <view class="_div data-v-2d6e0c28 rating-content">
+      <view class="_div data-v-2d6e0c28 overview">
+        <view class="_div data-v-2d6e0c28 overview-left">
+          <view class="_h1 data-v-2d6e0c28 score">{{seller.score}}</view>
+          <view class="_div data-v-2d6e0c28 title">综合评分</view>
+          <view class="_div data-v-2d6e0c28 rank">高于周边商家{{seller.rankRate}}%</view>
+        </view>
+        <view class="_div data-v-2d6e0c28 overview-right">
+          <view class="_div data-v-2d6e0c28 scroe-wrapper">
+            <label class="_span data-v-2d6e0c28 title">服务态度</label>
+            <view class="_div data-v-2d6e0c28 star">
+              <template data="{{...$root[$kk+'0'], $root}}" is="star$cc54dd1e"></template>
+            </view>
+            <label class="_span data-v-2d6e0c28 scroe">{{seller.serviceScore}}</label>
+          </view>
+          <view class="_div data-v-2d6e0c28 scroe-wrapper">
+            <label class="_span data-v-2d6e0c28 title">商品评分</label>
+            <view class="_div data-v-2d6e0c28 star">
+              <template data="{{...$root[$kk+'1'], $root}}" is="star$cc54dd1e"></template>
+            </view>
+            <label class="_span data-v-2d6e0c28 scroe">{{seller.foodScore}}</label>
+          </view>
+          <view class="_div data-v-2d6e0c28 delivery-wrapper">
+            <label class="_span data-v-2d6e0c28 title">送达时间</label>
+            <label class="_span data-v-2d6e0c28 deliver">{{seller.deliveryTime}}分钟</label>
+          </view>
+        </view>
+      </view>
+      <template data="{{...$root[$kk+'2'], $root}}" is="split$56840032"></template>
+      <template data="{{...$root[$kk+'3'], $root}}" is="ratingselect$8845185e"></template>
+    </view>
+    <view class="_div data-v-2d6e0c28 ratings-wrapper">
+      <view class="_ul data-v-2d6e0c28">
+        <view wx:key="index" key="{{index}}" class="_li data-v-2d6e0c28 rating-wrapper" wx:for="{{ratings}}" wx:for-index="index" wx:for-item="rating">
+          <view class="_div data-v-2d6e0c28 avater">
+            <image src="{{rating.avatar}}" style="width:56rpx;height:56rpx" class="_image data-v-2d6e0c28"></image>
+          </view>
+          <view class="_div data-v-2d6e0c28 content">
+            <view class="_h1 data-v-2d6e0c28 name">{{rating.username}}</view>
+            <view class="_div data-v-2d6e0c28 star-wrapper">
+              <view class="_div data-v-2d6e0c28 star">
+                <template data="{{...$root[$kk+'4-'+index], $root}}" is="star$cc54dd1e"></template>
+              </view>
+              <label class="_span data-v-2d6e0c28 delivery" hidden="{{!(rating.deliveryTime)}}">{{rating.deliveryTime}}分钟送达</label>
+            </view>
+            <view class="_p data-v-2d6e0c28 text">{{rating.text}}</view>
+            <view class="_div data-v-2d6e0c28 time">{{rating.rateTime}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

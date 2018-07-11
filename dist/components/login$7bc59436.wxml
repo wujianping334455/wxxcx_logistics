@@ -1,0 +1,24 @@
+<import src="dialog$6afe179c" />
+<template name="login$7bc59436">
+  <view class="_div data-v-bfa61aee login">
+    <form class="_form data-v-bfa61aee">
+      <view class="_div data-v-bfa61aee user">
+        <view class="_div data-v-bfa61aee item border-top">
+          <view class="_div data-v-bfa61aee name-label"> 手机号码：</view>
+          <input class="_input data-v-bfa61aee name-input" type="text" value="{{phoneNum}}" bindinput="handleProxy" placeholder="请输入本人手机号码" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+        </view>
+        <view class="_div data-v-bfa61aee item">
+          <view class="_div data-v-bfa61aee name-label"> 验证码：</view>
+          <input class="_input data-v-bfa61aee code-input" name="code" maxlength="4" placeholder="请输入验证码" />
+          <view class="_div data-v-bfa61aee code-btn" bindtap="sendCode">获取验证码</view>
+        </view>
+        <view class="_div data-v-bfa61aee xieyi" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">
+          <image class="_image data-v-bfa61aee img" src="{{agreeSrc}}"></image>
+          <view class="_div data-v-bfa61aee text">我同意《坎德拉用户协议》</view>
+        </view>
+      </view>
+      <button class="_button data-v-bfa61aee btn" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">注册</button>
+    </form>
+    <template data="{{...$root[$kk+'0'], $root}}" is="dialog$6afe179c"></template>
+  </view>
+</template>

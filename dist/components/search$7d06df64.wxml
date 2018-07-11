@@ -1,0 +1,6 @@
+<template name="search$7d06df64">
+  <view class="_div data-v-f09e02ca search">
+    <input class="_input data-v-f09e02ca ipt" type="text" placeholder="请输入要查询的单号" />
+    <image class="_image data-v-f09e02ca btn" src="/static/images/bt_search.png"></image>
+  </view>
+</template>

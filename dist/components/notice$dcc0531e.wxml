@@ -1,0 +1,5 @@
+<template name="notice$dcc0531e">
+  <view class="_div data-v-57d444be notice">
+    <label class="_span data-v-57d444be text">新用户立减5.0元(在线支付)</label>
+  </view>
+</template>

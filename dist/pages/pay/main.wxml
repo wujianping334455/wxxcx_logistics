@@ -1,1 +1,1 @@
-<import src="../../components/pay$03c658a3" /><template is="pay$03c658a3" data="{{ ...$root['0'], $root }}"/>
+<import src="../../components/pay$6ed2b196" /><template is="pay$6ed2b196" data="{{ ...$root['0'], $root }}"/>

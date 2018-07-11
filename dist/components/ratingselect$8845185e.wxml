@@ -1,0 +1,16 @@
+<template name="ratingselect$8845185e">
+  <view class="_div data-v-437452c4 ratingselect">
+    <view class="_div data-v-437452c4 rating-type border-1px">
+      <label class="_span data-v-437452c4 block positive {{[selectType === 2 ? 'active' : '']}}">{{desc.all}}
+        <label class="_span data-v-437452c4 count"></label>(47)</label>
+      <label class="_span data-v-437452c4 block positive {{[selectType === 0 ? 'active' : '']}}">{{desc.positive}}
+        <label class="_span data-v-437452c4 count"></label>(40)</label>
+      <label class="_span data-v-437452c4 block negative {{[selectType === 1 ? 'active' : '']}}">{{desc.negative}}
+        <label class="_span data-v-437452c4 count"></label>(7)</label>
+    </view>
+    <view class="_div data-v-437452c4 switch">
+      <view class="_div data-v-437452c4 iconfont icon-rentongguli icon"></view>
+      <label class="_span data-v-437452c4 text">只看好评</label>
+    </view>
+  </view>
+</template>
