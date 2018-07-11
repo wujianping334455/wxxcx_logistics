@@ -20,7 +20,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .order-item{
-    border-bottom:solid 1rpx #ddd;
     margin-bottom: 30rpx;
 }
 </style>

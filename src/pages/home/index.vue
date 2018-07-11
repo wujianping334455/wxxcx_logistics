@@ -2,9 +2,10 @@
     <div class="home">
         <h-swiper></h-swiper>
         <search></search>
-        <scroll-view>
+        <h-scan></h-scan>
+        <scroll-div>
             <o-list></o-list>
-        </scroll-view>
+        </scroll-div>
     </div>
 </template>
 
@@ -12,6 +13,7 @@
 const token = "Bearer eyJhbGciOiJIUzI1NiIsImNhbGciOiJHWklQIn0.H4sIAAAAAAAAAFXMQQqDMBBG4bvMOgOOmUjiFTxFMvkL6aJII7VFvLvtstvHxzuo9U4z3feNO56vZiBHLW80SxCJkw7RO8J7_QX1Osrgg6NHuf2LvLYFn-9JUs0RvrKhBFbFxNnSyBWarEQrFULnBWPus9N4AAAA.ziRA3yyD0E-IKlv7Ry-UN685J7s3RIDAZqZlnm-AczQ";
 import swiper from "@/components/swiper/swiper";
 import search from "@/components/common/search";
+import scan from "@/components/order/scan";
 import list from "@/components/order/list";
 import fly from '@/utils/fly'
 export default {
@@ -28,6 +30,7 @@ export default {
     components: {
         "h-swiper": swiper,
         search,
+        "h-scan":scan,
         "o-list":list
     },
     mounted(){
@@ -84,5 +87,6 @@ export default {
 .home{
     width: 100%;
     height: 100%;
+    background-color: #F7F7F7;
 }
 </style>

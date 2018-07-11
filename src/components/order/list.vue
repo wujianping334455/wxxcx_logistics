@@ -28,6 +28,6 @@ export default {
 
 <style lang="scss" scoped>
 .list{
-    background-color: #F7F7F7;
+    border-bottom:solid 1rpx #ddd;
 }
 </style>
