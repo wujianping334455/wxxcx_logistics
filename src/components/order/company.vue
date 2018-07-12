@@ -1,29 +1,17 @@
 <template>
     <div class="company-box">
-        <img src="" alt="快递公司" />
+        <img :src="company.url" alt="快递公司" />
         <div class="point">
-            <div class="time">深圳大学----->红榴斋（李新奇)</div>
-            <div class="address">订单号：870 966 231 222</div>
+            <div class="time">{{company.hunName}}--->{{company.waypiontName}}（{{company.userName}})</div>
+            <div class="address">订单号：{{company.orderNum}}</div>
         </div>
     </div>
 </template>
 <script>
-import { mapState, mapActions, mapMutations } from 'vuex';
 export default {
-    data() {
-        return {
-            query:"",
-        }
-    },
-    mounted(){
-        console.log(`搜索界面已挂载...`);
-    },
-    methods: {
-        formSubmit() {
-            
-        },
-        changeDialog(){
-            
+    props:{
+        company:{
+            type:Object
         }
     }
 }
